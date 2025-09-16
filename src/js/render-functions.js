@@ -1,6 +1,9 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import { loadMoreBtn, ulEl, loader } from './refs';
+
+const loadMoreBtn = document.querySelector('.load-more');
+const loader = document.querySelector('.loader');
+const ulEl = document.querySelector('.gallery');
 
 export const gallery = new SimpleLightbox('.gallery a', {
   /* options */

@@ -9,7 +9,9 @@ import {
 import { getImagesByQuery } from './js/pixabay-api.js';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { formRef, loadMoreBtn } from './js/refs.js';
+
+const formRef = document.querySelector('.form');
+const loadMoreBtn = document.querySelector('.load-more');
 
 let query = '';
 let page = 1;

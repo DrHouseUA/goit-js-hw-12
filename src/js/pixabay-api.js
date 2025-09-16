@@ -8,7 +8,6 @@ const instance = axios.create({
 });
 
 const API_KEY = import.meta.env.VITE_PIXABAY_API_KEY;
-console.log(import.meta.env.VITE_PIXABAY_API_KEY);
 
 export async function getImagesByQuery(query, page) {
   const params = {
